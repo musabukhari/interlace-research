@@ -1,0 +1,6 @@
+connect:
+  options:
+    port: '9091'
+    open: 'true'
+    base:
+      - '<%= app_dir %>'

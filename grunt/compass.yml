@@ -1,0 +1,6 @@
+options:
+  sassDir: '<%= app_dir %>/styles'
+  cssDir: '.tmp/styles'
+  importPath: '<%= app_dir %>/vendor'
+dev:
+  debugInfo: 'true'
