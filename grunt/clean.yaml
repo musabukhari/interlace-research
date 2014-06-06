@@ -1,0 +1,7 @@
+dist:
+    files:
+      dot: 'true'
+      src:
+        - '.tmp'
+        - '<%= build_dir %>'
+server: '.tmp'

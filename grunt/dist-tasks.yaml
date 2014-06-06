@@ -1,0 +1,4 @@
+# Creates the distribution tasks
+jshint:
+  files:
+    - '*.js'
