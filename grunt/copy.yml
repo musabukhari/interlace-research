@@ -1,6 +1,6 @@
 sources:
   cwd: '<%= src_dir %>/'
   src:
-    - '*.{html, js}'
+    - '*.js'
   dest: '<%= build_dir %>/'
   expand: 'true'

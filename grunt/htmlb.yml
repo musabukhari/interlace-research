@@ -1,0 +1,9 @@
+sources:
+  src: '<%= src_dir %>/**/*.html'
+  dest: '<%= build_dir %>'
+  options:
+    beautify: 'true'
+    sections:
+      layout:
+        header: 'views/header.html'
+        footer: 'view/footer.html'

@@ -1,0 +1,7 @@
+sources:
+  files:
+    src:
+      - '<%= src_dir %>/index.html'
+    dest: '<%= build_dir %>'
+    cwd: '<%= src_dir %>'
+    includePath: '<%= client_dir %>/views'

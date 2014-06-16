@@ -1,0 +1,5 @@
+sources:
+  options:
+    includeBase: '<%= client_dir %>/views'
+    files:
+      '<% src_dir %>/index.html': 'index.htm'
