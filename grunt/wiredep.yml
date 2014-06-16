@@ -1,0 +1,5 @@
+target:
+  src:
+    - <%= app_dir %>/**/*.html
+  dependencies: true
+  devDependencies: false

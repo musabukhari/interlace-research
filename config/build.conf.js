@@ -9,7 +9,8 @@ module.exports = {
    */
   build_dir: 'build',
   dist_dir: 'dist',
-  app_dir: 'client',
+  client_dir: 'client',
+  src_dir: 'client/src',
 
   /**
    * This is a collection of file patterns that refer to our app code (the

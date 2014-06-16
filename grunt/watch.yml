@@ -1,16 +1,17 @@
-js:
+sources:
   files:
-    - '<%= app_dir %>/scripts/{,*/}*.js'
-  tasks: 'newer:jshint:all'
+    - '<%= src_dir %>/**/*.js'
+    - '<%= src_dir %>/**/*.html'
+  tasks: 'newer:copy:sources'
 compass:
   files:
-    - '<%= app_dir %>/styles/*.scss'
+    - '<%= client_dir %>/styles/*.scss'
   tasks:
     - 'compass:dev'
 livereload:
   options:
     livereload: '<%= connect.options.livereload %>'
   files:
-    - '<%= app_dir %>/{,*/}*.html'
-    - '.tmp/styles/{,*/}*.css'
-    - '<%= app_dir %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+    - '<%= build_dir %>/{,*/}*.html'
+    - '<%= build_dir %>+/styles/{,*/}*.css'
+    - '<%= build_dir %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'

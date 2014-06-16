@@ -4,6 +4,6 @@ options:
   hostname: 'localhost'
   livereload: 35729
   base:
-    - '<%= build_dir =>'
+    - '<%= build_dir %>'
 livereload:
   open: 'true'
