@@ -8,8 +8,7 @@ module.exports = {
    * completely built.
    */
   build_dir: 'build',
-  dist_dir: 'dist',
-  app_dir: 'client',
+  src_dir: 'client',
 
   /**
    * This is a collection of file patterns that refer to our app code (the
