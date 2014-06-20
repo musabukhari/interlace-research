@@ -1,2 +1,4 @@
-html:
-  -'<%= src_dir %>/{,*/}*.html']
+html: '<%= build_dir %>/index.html'
+# options:
+#   dirs:
+#     - '.tmp'

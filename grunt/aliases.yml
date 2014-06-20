@@ -5,4 +5,15 @@ dev:
   - compass:dev
   - wiredep:html
   - connect:livereload
+  - useminPrepare
+  - concat
+  - uglify
+  - usemin
   - watch
+
+t:
+  - clean
+  - includereplace:html
+  - copy:js
+  - wiredep:html
+
