@@ -1,8 +1,13 @@
-sources:
+js:
   files:
     - '<%= src_dir %>/**/*.js'
+  tasks: 'newer:copy:js'
+html:
+  files:
     - '<%= src_dir %>/**/*.html'
-  tasks: 'newer:copy:sources'
+  tasks:
+    - 'newer:includereplace:html'
+    - 'wiredep:html'
 compass:
   files:
     - '<%= client_dir %>/styles/*.scss'

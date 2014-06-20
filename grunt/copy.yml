@@ -1,4 +1,4 @@
-sources:
+js:
   cwd: '<%= src_dir %>/'
   src:
     - '*.js'

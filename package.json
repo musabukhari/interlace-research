@@ -9,9 +9,8 @@
     "grunt-contrib-connect": "~0.5.0",
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-includes": "^0.4.4",
+    "grunt-include-replace": "^2.0.0",
     "grunt-newer": "^0.7.0",
-    "grunt-processhtml": "^0.3.3",
     "grunt-wiredep": "^1.8.0",
     "load-grunt-config": "^0.9.2",
     "time-grunt": "~0.2.1"

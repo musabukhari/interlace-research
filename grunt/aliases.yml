@@ -1,5 +1,7 @@
 dev:
   - clean
-  - copy
+  - includereplace:html
+  - copy:js
+  - wiredep:html
   - connect:livereload
   - watch

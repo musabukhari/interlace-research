@@ -1,0 +1,11 @@
+html:
+  options:
+    prefix: '<!-- @'
+    suffix: ' -->'
+    includesDir: '<%= client_dir %>/views'
+  files:
+    - src: '**/*.html'
+      dest: '<%= build_dir %>/'
+      expand: true
+      cwd: '<%= src_dir %>/'
+
