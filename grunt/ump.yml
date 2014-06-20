@@ -1,0 +1,9 @@
+html: '<%= build_dir %>/index.html'
+options:
+  dest: '<%= build_dir %>/'
+  flow:
+    steps:
+      js:
+        - concat
+# Build breaks is post is not here
+    post: ''

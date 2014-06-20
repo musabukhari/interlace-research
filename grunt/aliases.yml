@@ -7,7 +7,6 @@ dev:
   - connect:livereload
   - useminPrepare
   - concat
-  - uglify
   - usemin
   - watch
 
@@ -16,4 +15,7 @@ t:
   - includereplace:html
   - copy:js
   - wiredep:html
+  - useminPrepare:dev
+  - concat
+  - usemin
 
