@@ -1,0 +1,6 @@
+dev:
+  src:
+    - '<%= src_dir %>/index.html'
+options:
+  dest:
+    - '<%= build_dir %>/'
