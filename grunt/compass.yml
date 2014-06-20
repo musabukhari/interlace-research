@@ -1,5 +1,4 @@
 options:
-  sassDir: '<%= app_dir %>/styles'
-  cssDir: '<%= build_dir %>/styles'
-  importPath: '<%= app_dir %>/vendor'
-
+  sassDir: '<%= client_dir %>/styles'
+  cssDir: '<%= build_dir %>/styles/'
+  importPath: '<%= client_dir %>/vendor'

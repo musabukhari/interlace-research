@@ -2,6 +2,7 @@ dev:
   - clean
   - includereplace:html
   - copy:js
+  - compass:dev
   - wiredep:html
   - connect:livereload
   - watch

@@ -7,7 +7,7 @@ html:
     - '<%= src_dir %>/**/*.html'
   tasks:
     - 'newer:includereplace:html'
-    - 'wiredep:html'
+    - 'newer:wiredep:html'
 compass:
   files:
     - '<%= client_dir %>/styles/*.scss'
