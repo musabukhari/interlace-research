@@ -7,11 +7,14 @@ wire:
 
 dev:
   - wire
+  - useconcat
+  - connect:livereload
+  - watch
+
+useconcat:
   - useminPrepare
   - concat
   - usemin
-  - connect:livereload
-  - watch
 
 devmin:
   - wire

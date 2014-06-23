@@ -8,7 +8,7 @@ html:
     - '<%= client_dir %>/**/*.html'
   tasks:
     - 'includereplace:html'
-    - 'wiredep:html'
+    - 'useconcat'
 compass:
   files:
     - '<%= client_dir %>/styles/*.scss'
