@@ -4,10 +4,10 @@ dev:
   - copy:js
   - compass:dev
   - wiredep:html
-  - connect:livereload
   - useminPrepare
   - concat
   - usemin
+  - connect:livereload
   - watch
 
 t:
@@ -15,7 +15,7 @@ t:
   - includereplace:html
   - copy:js
   - wiredep:html
-  - useminPrepare:dev
-  - concat
-  - usemin
+  # - useminPrepare
+  # - concat
+  # - usemin
 
