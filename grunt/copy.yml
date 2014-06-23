@@ -4,3 +4,8 @@ js:
     - '*.js'
   dest: '<%= build_dir %>/'
   expand: 'true'
+vendor:
+  expand: true
+  cwd: '<%= client_dir %>'
+  src: 'vendor/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*'
+  dest: '<%= build_dir %>'

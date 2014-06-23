@@ -2,3 +2,12 @@ options:
   sassDir: '<%= client_dir %>/styles'
   cssDir: '<%= build_dir %>/styles/'
   importPath: '<%= client_dir %>/vendor'
+  generatedImagesDir: '.tmp/images/generated'
+  imagesDir: '<%= client_dir %>/images'
+  javascriptsDir: '<%= client_dir %>/scripts'
+  fontsDir: '<%= client_dir %>/styles/fonts'
+  httpImagesPath: '/images'
+  httpGeneratedImagesPath: '/images/generated'
+  httpFontsPath: '/styles/fonts'
+  relativeAssets: false
+  assetCacheBuster: false

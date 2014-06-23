@@ -5,9 +5,10 @@ js:
 html:
   files:
     - '<%= src_dir %>/**/*.html'
+    - '<%= client_dir %>/**/*.html'
   tasks:
-    - 'newer:includereplace:html'
-    - 'newer:wiredep:html'
+    - 'includereplace:html'
+    - 'wiredep:html'
 compass:
   files:
     - '<%= client_dir %>/styles/*.scss'
@@ -18,5 +19,5 @@ livereload:
     livereload: '<%= connect.options.livereload %>'
   files:
     - '<%= build_dir %>/{,*/}*.html'
-    - '<%= build_dir %>+/styles/{,*/}*.css'
+    - '<%= build_dir %>/styles/{,*/}*.css'
     - '<%= build_dir %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
