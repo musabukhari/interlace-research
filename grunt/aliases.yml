@@ -1,0 +1,38 @@
+wire:
+  - clean
+  - includereplace:html
+  - copy
+  - compass:dev
+  - wiredep:html
+
+dev:
+  - wire
+  - useconcat
+  - connect:livereload
+  - watch
+
+useconcat:
+  - useminPrepare
+  - concat
+  - usemin
+
+devmin:
+  - wire
+  - useminPrepare
+  - concat
+  - uglify
+  - cssmin
+  - usemin
+  - connect:livereload
+  - watch
+
+
+t:
+  - clean
+  - includereplace:html
+  - copy:js
+  - wiredep:html
+  # - useminPrepare
+  # - concat
+  # - usemin
+

@@ -1,0 +1,23 @@
+js:
+  files:
+    - '<%= src_dir %>/**/*.js'
+  tasks: 'newer:copy:js'
+html:
+  files:
+    - '<%= src_dir %>/**/*.html'
+    - '<%= client_dir %>/**/*.html'
+  tasks:
+    - 'includereplace:html'
+    - 'useconcat'
+compass:
+  files:
+    - '<%= client_dir %>/styles/*.scss'
+  tasks:
+    - 'compass:dev'
+livereload:
+  options:
+    livereload: '<%= connect.options.livereload %>'
+  files:
+    - '<%= build_dir %>/{,*/}*.html'
+    - '<%= build_dir %>/styles/{,*/}*.css'
+    - '<%= build_dir %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'

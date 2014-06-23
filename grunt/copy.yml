@@ -1,0 +1,20 @@
+js:
+  cwd: '<%= src_dir %>/'
+  src:
+    - '*.js'
+  dest: '<%= build_dir %>/'
+  expand: 'true'
+boostrap:
+  expand: true
+  cwd: '<%= client_dir %>'
+  src: 'vendor/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*'
+  dest: '<%= build_dir %>/'
+images:
+  expand: true
+  cwd: '<%= client_dir %>'
+  src:
+    - '*.{ico,png,txt}'
+    - '.htaccess'
+    - 'images/*.png'
+    - 'fonts/*'
+  dest: '<%= build_dir %>/'

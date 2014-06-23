@@ -1,0 +1,4 @@
+html: '<%= build_dir %>/index.html'
+# options:
+#   dirs:
+#     - '.tmp'

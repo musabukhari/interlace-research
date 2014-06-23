@@ -1,0 +1,5 @@
+html:
+  src:
+    - <%= build_dir %>/**/*.html
+  dependencies: true
+  devDependencies: false
