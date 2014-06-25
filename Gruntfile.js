@@ -14,7 +14,7 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-include-replace');
-  
+
   grunt.registerTask('test', [
       'clean:server',
       'concurrent:test',
@@ -27,4 +27,3 @@ module.exports = function (grunt) {
     grunt.log.writeln(JSON.stringify(grunt.config()));
   });
 };
-
