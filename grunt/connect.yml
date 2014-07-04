@@ -6,4 +6,5 @@ options:
   base:
     - '<%= build_dir %>'
 livereload:
-  open: true
+  options:
+    open: true
