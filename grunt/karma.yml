@@ -1,0 +1,7 @@
+options:
+  configFile: '<%= conf_dir %>/karma.conf.js'
+unit:
+  port: 9019,
+  background: true
+continuous:
+  singleRun: true
