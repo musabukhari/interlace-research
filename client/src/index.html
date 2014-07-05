@@ -1,31 +1,13 @@
-<html>
-  <head>
-    <title>Interlace Research Home Page</title>
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body ng-app="mainPage">
-    <div ng-include=""></div>
-    <!-- @include('main.html') -->
-    <h2>Hey soul .</h2>
-    <table>
-      <th>
-        <td>Hey</td>
-        <td>there</td>
-        <td>mister</td>
-      </th>
+<!-- @include('header.html', {"title": "Interlace Research Main Page"}) -->
+<!-- @include('navbar.html') -->
+<div ng-app="irMainPage" ng-controller="AppCtrl">
+    <h3>Values</h3>
+    <table class="table">
+        <tr ng-repeat="row in rows">
+            <td>{{ row.name }}</td>
+            <td>{{ row.value }}</td>
+        </tr>
     </table>
+</div>
 
-    <!-- build:js js/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <script src="app.js"></script>
-
-  </body>
-</html>
+<!-- @include('footer.html', {"scriptName": "app.js"}) -->

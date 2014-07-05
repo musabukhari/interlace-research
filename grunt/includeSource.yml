@@ -1,0 +1,5 @@
+options:
+  basePath: '<%= build_dir %>/'
+html:
+  files:
+    - '<%= build_dir %>/index.html': '<%= build_dir %>/index.html'

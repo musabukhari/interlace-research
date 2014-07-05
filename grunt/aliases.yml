@@ -4,6 +4,7 @@ wire:
   - copy
   - compass:dev
   - wiredep:html
+  - includeSource
 
 dev:
   - wire

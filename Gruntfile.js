@@ -13,14 +13,6 @@ module.exports = function (grunt) {
     data: require('./config/build.conf.js')
   });
 
-  grunt.registerTask('test', [
-      'clean:server',
-      'concurrent:test',
-      'autoprefixer',
-      'connect:test',
-      'karma'
-    ]);
-
   grunt.registerTask('config', function () {
     grunt.log.writeln(JSON.stringify(grunt.config()));
   });
