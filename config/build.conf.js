@@ -11,6 +11,7 @@ module.exports = {
   dist_dir: 'dist',
   client_dir: 'client',
   src_dir: 'client/src',
+  conf_dir: 'config',
 
   /**
    * This is a collection of file patterns that refer to our app code (the
