@@ -13,8 +13,6 @@ module.exports = function (grunt) {
     data: require('./config/build.conf.js')
   });
 
-  grunt.loadNpmTasks('grunt-include-replace');
-
   grunt.registerTask('test', [
       'clean:server',
       'concurrent:test',
