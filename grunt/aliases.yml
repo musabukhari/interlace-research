@@ -1,14 +1,14 @@
 wire:
-  - clean
   - includereplace:html
   - copy
-  - compass:dev
   - wiredep:html
   - includeSource
 
 dev:
+  - clean
   - wire
   - useconcat
+  - compass:dev
   - connect:livereload
   - watch
 

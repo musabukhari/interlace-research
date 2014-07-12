@@ -5,6 +5,7 @@ options:
   livereload: 35729
   base:
     - '<%= build_dir %>'
+    - '<%= client_dir %>/json'
 livereload:
   options:
     open: true
