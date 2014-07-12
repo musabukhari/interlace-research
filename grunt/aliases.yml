@@ -27,13 +27,5 @@ devmin:
   - connect:livereload
   - watch
 
-
-t:
-  - clean
-  - includereplace:html
-  - copy:js
-  - wiredep:html
-  # - useminPrepare
-  # - concat
-  # - usemin
-
+test:
+  - karma:travis
