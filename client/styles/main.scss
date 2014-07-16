@@ -4,6 +4,9 @@ $icon-font-path: "../vendor/bootstrap-sass-official/vendor/assets/fonts/bootstra
 // endbower
 @import "compass/css3";
 
+.container-fluid {
+    background-color: #c7c0fb;
+}
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -123,3 +126,25 @@ td, th {
     background-color: black;
   }
 
+#name {
+    float: left;
+    top: 5px / 768px * 100%;
+    font-family: Belleza;
+    font-weight: normal;
+    font-size: 4.5em;
+    padding: 2px / 350px * 100%;
+    width: 350px / 1366px * 100%;
+    border: 0px;
+    line-height: 100%;
+    background-color: #615ce0;
+    @include box-shadow(black 2px 2px 10px);
+}
+
+#logo {
+    float: right;
+    font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+    font-weight:bold;
+    top: 5px / 768px * 100%;
+    width: 300px / 1366px * 100%;
+    height: 10%;
+}

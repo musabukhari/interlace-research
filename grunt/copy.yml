@@ -2,6 +2,7 @@ js:
   cwd: '<%= src_dir %>/'
   src:
     - '*.js'
+    - '!*.spec.js'
   dest: '<%= build_dir %>/'
   expand: 'true'
 boostrap:

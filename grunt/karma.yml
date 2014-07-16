@@ -1,7 +1,13 @@
 options:
-  configFile: '<%= conf_dir %>/karma.conf.js'
+  files:
+    - '<%= test_files.js %>'
+    - '<%= src_dir %>/**/*.js'
+    - '<%= client_dir %>/common/**/*.js'
+  frameworks:
+    - 'jasmine'
+  browsers:
+    - 'PhantomJS'
 unit:
-  port: 9019,
-  background: true
-continuous:
+  singleRun: false
+travis:
   singleRun: true

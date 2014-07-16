@@ -1,49 +1,25 @@
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- @include('header.html') -->
+<link href="//maxcdn.bootstrapcdn.com/fontawesome/4.1.0/css/fontawesome.min.css" rel="stylesheet"> 
 
-  <body ng-app="mainPage">
-    
-    <div ng-include=""></div>
+<!-- @include('header.html') -->
 
-    <div class="tabbable">
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
-    <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
-  </ul>
-<div class="container">
-<ul class="nav nav-tabs" id="myTab">
-  <li class="active"><a href="#home">Home</a></li>
-  <li><a href="#profile">Profile</a></li>
-  <li><a href="#messages">Messages</a></li>
-  <li><a href="#settings">Settings</a></li>
-</ul>
+<body ngapp="mainPage">
+
+  <div nginclude=""></div>
+
+
  
-<div class="tab-content">
-  <div class="tab-pane active" id="home">Home content...</div>
-  <div class="tab-pane" id="profile">Content here...</div>
-  <div class="tab-pane" id="messages">Messages...</div>
-  <div class="tab-pane" id="settings">Settings...</div>
-</div>
-</div>
+<div ngapp="irMainPage" ngcontroller="AppCtrl"> </div>
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="tab1">
-      
-      <p>I'm in Section 1.</p>
-    </div>
-    <div class="tab-pane" id="tab2">
-      <p>I'm in Section 2.</p>
-    </div>
-  </div>
-</div>
+  <!-- @include('navbar.html') -->
+
+  <!-- @include('tab.html') -->
+
+  <!-- @include('main.html') -->
+
+  <!-- @include('footer.html') -->
+
+  <script src="app.js"></script>
  
-    <!-- @include('navbar.html') -->
-
-    <!-- @include('main.html') -->
-
-    <!-- @include('footer.html') -->
-
-    <script src="app.js"></script>
-
-  </body>
+</body>
 </html>
+

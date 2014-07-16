@@ -1,13 +1,14 @@
 wire:
-  - clean
   - includereplace:html
   - copy
-  - compass:dev
   - wiredep:html
+  - includeSource
 
 dev:
+  - clean
   - wire
   - useconcat
+  - compass:dev
   - connect:livereload
   - watch
 
@@ -26,13 +27,5 @@ devmin:
   - connect:livereload
   - watch
 
-
-t:
-  - clean
-  - includereplace:html
-  - copy:js
-  - wiredep:html
-  # - useminPrepare
-  # - concat
-  # - usemin
-
+test:
+  - karma:travis

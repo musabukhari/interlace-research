@@ -23,11 +23,9 @@ module.exports = {
    * app's unit tests.
    */
   app_files: {
-    js: [ 'src/**/*.js', '!src/**/*.spec.js', '!src/assets/**/*.js' ],
+    js: [ '<%= client_dir %>/src/**/*.js', '!<%= client_dir %>/src/**/*.spec.js' ],
+    common: [ '<%= client_dir %>/common/**/*.js'],
     jsunit: [ 'src/**/*.spec.js' ],
-
-    coffee: [ 'src/**/*.coffee', '!src/**/*.spec.coffee' ],
-    coffeeunit: [ 'src/**/*.spec.coffee' ],
 
     atpl: [ 'src/app/**/*.tpl.html' ],
     ctpl: [ 'src/common/**/*.tpl.html' ],
@@ -41,7 +39,8 @@ module.exports = {
    */
   test_files: {
     js: [
-      'vendor/angular-mocks/angular-mocks.js'
+      '<%= client_dir %>/vendor/angular/angular.js',
+      '<%= client_dir %>/vendor/angular-mocks/angular-mocks.js'
     ]
   },
 
