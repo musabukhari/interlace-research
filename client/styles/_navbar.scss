@@ -3,10 +3,13 @@ $icon-font-path: "../vendor/bootstrap-sass-official/vendor/assets/fonts/bootstra
 @import "../vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 @import "compass/css3";
+@import "_colors.scss";
+@import "_fonts.scss";
 
 #dropdown{
-    background-color: #ffc7db;
+    background-color: $container-bg;
     self-align: center;
+    float: center;
 }
 
 #dropdown ul {
@@ -21,19 +24,19 @@ $icon-font-path: "../vendor/bootstrap-sass-official/vendor/assets/fonts/bootstra
 }
 
 #dropdown ul li {
-  font: bold 12px/18px sans-serif;
+  font: bold 12px/18px $sans-serif;
   display: inline-block;
   position: relative;
   padding: 15px 20px;
-  background: #ffc7db;
+  background: $container-bg;
   cursor: pointer;
   @include transition-property(width);
   @include transition-duration(2s);
 }
 
 #dropdown ul li:hover {
-  background: #555;
-  color: #fff;
+  background: $nav-dd-bg;
+  color: $nav-dd-txt;
 }
 
 #dropdown ul li ul {
@@ -54,14 +57,14 @@ $icon-font-path: "../vendor/bootstrap-sass-official/vendor/assets/fonts/bootstra
 }
 
 #dropdown ul li ul li { 
-  background: #555; 
+  background: $nav-dd-bg; 
   display: block; 
-  color: #fff;
+  color: $nav-dd-txt;
   text-shadow: 0 -1px 0 #000;
 }
 
 #dropdown ul li ul li:hover { 
-  background: #666; 
+  background: $nav-dd-alt; 
   display: block;
   opacity: 1;
   visibility: visible;

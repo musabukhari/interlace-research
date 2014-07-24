@@ -3,10 +3,18 @@ $icon-font-path: "../vendor/bootstrap-sass-official/vendor/assets/fonts/bootstra
 @import "../vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 @import "compass/css3";
+@import "_navbar.scss";
+@import "_colors.scss";
+@import "_fonts.scss";
 
 .container-fluid {
-    background-color: #c7c0fb;
+    float: center;
+    background-color: $container-bg;
+    @include border-radius($container-br);
+    background-image: url('build/images/img-noise-361x370.png');
+    //opacity: 0.8;
 }
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -30,7 +38,7 @@ body {
 
 /* Custom page header */
 .header {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid white;
 }
 
 /* Make the masthead heading the same height as the navigation */
@@ -45,7 +53,7 @@ body {
 .footer {
     padding-top: 19px;
     color: #777;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid white;
 }
 
 .container-narrow > hr {
@@ -55,7 +63,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid white;
 }
 
 .jumbotron .btn {
@@ -96,10 +104,12 @@ body {
 }
 
 #example {
-    background-color: #c88dbe;
-    font-family: 'Alegreya', serif;
+    background-color: $example-bg;
+    font-family: $name-font;
     font-size: 2em;
     text-align: center;
+    @include border-corner-radius(top, left, 20%);
+    @include border-corner-radius(top, right, 20%);
 }
 
 #table-exp {
@@ -115,7 +125,7 @@ td, th {
   vertical-align: middle;
   text-align: center;
   opacity: 0.6;
-  background-color: #07a1ed;
+  background-color: $table-bg;
   @include border-corner-radius(top, left, 12%);
   @include border-corner-radius(top, right, 12%);
   @include single-box-shadow;
@@ -129,22 +139,49 @@ td, th {
 #name {
     float: left;
     top: 5px / 768px * 100%;
-    font-family: Belleza;
+    font-family: $header-title-font-family;
     font-weight: normal;
-    font-size: 4.5em;
+    font-size: 3.5em;
     padding: 2px / 350px * 100%;
-    width: 350px / 1366px * 100%;
+    width: 300px / 1366px * 100%;
     border: 0px;
     line-height: 100%;
-    background-color: #615ce0;
+    background-color: $name-bg;
+    border-radius: 10px 39px 40px 10px;
+    -moz-border-radius: 10px 39px 40px 10px;
+    -webkit-border-radius: 10px 39px 40px 10px;
     @include box-shadow(black 2px 2px 10px);
 }
 
 #logo {
     float: right;
-    font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+    font-family: $logo-sub;
     font-weight:bold;
     top: 5px / 768px * 100%;
     width: 300px / 1366px * 100%;
     height: 10%;
+}
+
+h2{
+    margin: 0;
+    color: $grey;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: $sans;
+}
+
+.item {
+    background: $carousel-bg;
+    text-align: center;
+    height: 300px;
+}
+
+.slides {
+    margin: 20px;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    font-color: black;
+    self-align: center;
 }
