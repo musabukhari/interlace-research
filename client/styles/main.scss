@@ -6,6 +6,7 @@ $icon-font-path: "../vendor/bootstrap-sass-official/vendor/assets/fonts/bootstra
 @import "_navbar.scss";
 @import "_colors.scss";
 @import "_fonts.scss";
+@import "_swipebar.scss";
 
 .container-fluid {
     float: center;
@@ -184,4 +185,8 @@ h2{
     text-decoration: none;
     font-color: black;
     self-align: center;
+}
+
+.ir {
+    @extend .glyphicon;
 }

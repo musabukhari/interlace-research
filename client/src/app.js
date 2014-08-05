@@ -4,3 +4,5 @@ angular.module('irMainPage', ['irServices'])
     $scope.rows = users;
   });
 });
+
+$("[name='my-checkbox']").bootstrapSwitch();
