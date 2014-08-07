@@ -1,4 +1,5 @@
 <html>
+    <div class="container-fluid">
   <head>
     <title>Interlace Research Home Page</title>
     <!-- bower:css -->
@@ -7,7 +8,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <meta charset=('utf-8');
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="home/musa/interlace-research/client/sidr-package-1.2.1/stylesheets/jquery.sidr.dark.css">
+    <link rel="stylesheet" href="client/sidr-package-1.2.1/stylesheets/jquery.sidr.dark.css">
     <link href="bootstrap-switch.css" rel="stylesheet">
     <script src="jquery.js"></script>
     <script src="bootstrap-switch.js"></script>
@@ -17,10 +18,16 @@
     'http://fonts.googleapis.com/css?family=Belleza|Ceviche+One|Lato:300,400,700,900|Gafata|Nobile:400,700|Roboto:400,300' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- endbuild -->
-        <div class="container-fluid col-xs-10 col-sm-8 col-md-10">
-           <div class="row">
-            <div id="name" class="col-xs-6 col-sm-3 col-md-6">InterLACE</div>
-              <div id="logo">A project of :
-              	<img src="https://int.erlace.com/images/CEEO_small.png"></div>    
+   
+  </head>
 
-</head>
+
+    <body>
+    
+            <div id="name">Demo Site</div>
+            <!-- @include('navbar.html') -->
+            </div> 
+            <div id="logo" > A project by:
+                <img src="https://int.erlace.com/images/CEEO_small.png"></div>    
+
+    <!-- @include('swipebar.html') -->

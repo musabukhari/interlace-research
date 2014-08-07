@@ -8,11 +8,16 @@ $icon-font-path: "../vendor/bootstrap-sass-official/vendor/assets/fonts/bootstra
 @import "_fonts.scss";
 @import "_swipebar.scss";
 
+
+html {
+    background-color: black;
+    background-image: url('http://api.thumbr.it/whitenoise-361x370.png?background=4ea6caff&noise=626262&density=15&opacity=15');
+}
 .container-fluid {
     float: center;
-    background-color: $container-bg;
-    @include border-radius($container-br);
-    background-image: url('build/images/img-noise-361x370.png');
+    background-color: black;
+    @include border-radius(30px);
+    background-image: url('client/images/img-noise-361x370.png');
     //opacity: 0.8;
 }
 
@@ -81,28 +86,34 @@ body {
     margin-top: 28px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
-
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
+ /* Responsive: Portrait tablets and up */
+ @media screen and (max-width: 768px) {             
+ body, #name {
+    font-size: 50%;
+}    
+#name , #logo {
+    visibility: hidden;
 }
+} //           .container {
+//         max-width: 730px;
+//     }
+
+//     /* Remove the padding we set earlier */
+//     .header,
+//     .marketing,
+//     .footer {
+//         padding-left: 0;
+//         padding-right: 0;
+//     }
+//     Space out the masthead
+//     .header {
+//         margin-bottom: 30px;
+//     }
+//     /* Remove the bottom border on the jumbotron for visual effect */
+//     .jumbotron {
+//         border-bottom: 0;
+//     }
+// }
 
 #example {
     background-color: $example-bg;
@@ -139,12 +150,14 @@ td, th {
 
 #name {
     float: left;
-    top: 5px / 768px * 100%;
-    font-family: $header-title-font-family;
+    left: 8%;
+    position: absolute;
+    top: 20px / 768px * 100%;
+    font-family: $heading-alt;
     font-weight: normal;
-    font-size: 3.5em;
+    font-size: 3.0em;
     padding: 2px / 350px * 100%;
-    width: 300px / 1366px * 100%;
+    width: 250px / 1366px * 100%;
     border: 0px;
     line-height: 100%;
     background-color: $name-bg;
@@ -158,9 +171,10 @@ td, th {
     float: right;
     font-family: $logo-sub;
     font-weight:bold;
-    top: 5px / 768px * 100%;
+    top: 0px / 768px * 100%;
     width: 300px / 1366px * 100%;
     height: 10%;
+    right: 30%;
 }
 
 h2{
@@ -189,4 +203,36 @@ h2{
 
 .ir {
     @extend .glyphicon;
+}
+
+#slides {
+    width: 650px / 1366px * 100%;
+    height: 470px / 768px * 100%;
+    left: 8%;
+    top: 2px / 768px * 100%;
+    position: relative;
+    align-content: center;
+    background-color: #79d1f1;
+    float: left;
+}
+
+.carousel-inner {
+    background-color: #79d1f1;
+}
+
+.bs-example {
+    float: right;
+    width: 600px / 1366px * 100%;
+    left: 1100px / 1366px * 100%;
+}
+
+
+.footer {
+    float : left;
+    top: 100%;
+}
+
+.panel-body {
+    font-family: $logo-sub;
+    font-weight: bold;
 }

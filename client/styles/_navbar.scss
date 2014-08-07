@@ -6,10 +6,16 @@ $icon-font-path: "../vendor/bootstrap-sass-official/vendor/assets/fonts/bootstra
 @import "_colors.scss";
 @import "_fonts.scss";
 
+
 #dropdown{
     background-color: $container-bg;
-    self-align: center;
-    float: center;
+    align-content: center;
+    float: left;
+    margin: 10px 400px;    
+    position: absolute;
+    @include border-corner-radius(top, left, 2%);
+    @include border-corner-radius(top, right, 2%);
+    @include single-box-shadow;
 }
 
 #dropdown ul {
@@ -24,9 +30,9 @@ $icon-font-path: "../vendor/bootstrap-sass-official/vendor/assets/fonts/bootstra
 }
 
 #dropdown ul li {
-  font: bold 12px/18px sans-serif;
+  font: bold 14px/18px monospace;
   display: inline-block;
-  position: relative;
+  position: static;
   padding: 15px 20px;
   background: $container-bg;
   cursor: pointer;
@@ -42,7 +48,7 @@ $icon-font-path: "../vendor/bootstrap-sass-official/vendor/assets/fonts/bootstra
 #dropdown ul li ul {
   padding: 0;
   position: absolute;
-  width: 150px;
+  width: 50px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
